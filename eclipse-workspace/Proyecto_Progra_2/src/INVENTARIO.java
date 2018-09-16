@@ -55,16 +55,5 @@ public void setNoMetales(String noMetales) {
 	NoMetales = noMetales;
 }
 
-public int getCantidad() {
-	return Cantidad;
-}
 
-public void setCantidad(int cantidad) {
-	Cantidad = cantidad;
-}
-public String LeerDatosInventario()
-{
-	return (getPiezasGrandes() + "/" +getPiezasMedianas() + "/" + getPiezasPequeñas() + "/" + getNoMetales() + "/" +getCantidad());
-}
-}
 
