@@ -1,7 +1,8 @@
-Connection con=null;
-}
-public class CONECTAR_BD {
 
+import java.sql.Connectio;
+
+public class CONECTAR_BD {
+Connection con=null;
 }
 
 	public CONECTAR_BD()
