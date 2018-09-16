@@ -71,62 +71,7 @@ int op=0;
 			
 			try {
 				E1.leerdatosMantenimiento_Preventivo();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 			
-			break;
-			
-		case 4:
-			
-			try {
-				E1.leerdatosInventario();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			break;
-		case 5:
-			
-			try {
-				E1.leerdatosCalendario();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			break;
-			
-		case 6:
-			
-			System.out.println("Ingrese el codigo del empleado que desea registrar su vivienda \n");
-			int codEmpleado=teclado.nextInt();
-			System.out.println("Nombre de la ciudad donde vive");
-			String ciudad=teclado.next();
-			System.out.println("Nombre de el departamento localizado");
-			String departamento=teclado.next();
-			System.out.println("Nombre del pais que pertenece");
-			String pais=teclado.next();
-			System.out.println("Codigo de registro");
-			int cod=teclado.nextInt();
-			
-			try {
-				E1.Registro_Residencia_Trabajadores(cod, ciudad, departamento, pais, codEmpleado);
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			break;
-			
-			
-		
-		default: System.out.println("Gracias por usar el sistema");
-		}
-	
-		}while(op!=7);
 		
 	}
 	
