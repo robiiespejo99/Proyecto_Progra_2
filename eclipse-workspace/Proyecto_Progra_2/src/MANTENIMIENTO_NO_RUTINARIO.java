@@ -1,5 +1,7 @@
-
-	int op=0;
+import javasql.SqlException;
+public class MANTENIMIENTO_NO_RUTINARIO {
+	
+int op=0;
 	
 ArrayList<Maquinas> maquinaria=new ArrayList<Maquinas>();
 ArrayList<Inventario> inventario=new ArrayList<Inventario>();
@@ -124,6 +126,3 @@ public void Menu_No_Rutinario() throws InputMismatchException {
 }
 
 
-public class MANTENIMIENTO_NO_RUTINARIO {
-
-}
