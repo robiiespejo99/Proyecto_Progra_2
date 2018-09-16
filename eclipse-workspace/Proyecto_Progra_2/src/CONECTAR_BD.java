@@ -1,4 +1,9 @@
 Connection con=null;
+}
+public class CONECTAR_BD {
+
+}
+
 	public CONECTAR_BD()
 	{
 		try{
@@ -170,7 +175,3 @@ PreparedStatement stat = con.prepareStatement("SELECT * FROM MAQUINARIA WHERE CO
 		
 	}
 	
-}
-public class CONECTAR_BD {
-
-}
