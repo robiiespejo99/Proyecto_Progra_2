@@ -1,5 +1,5 @@
 
-public class MAQUINAS {
+public class Maquinas {
   
   String NombreMaquina;
   String Seccion;
