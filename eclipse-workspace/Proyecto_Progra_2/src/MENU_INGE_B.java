@@ -1,5 +1,5 @@
 
-public class MENU_INGE_B {
+public class Menu_Ing_B {
 
  int op=0;
 	Scanner teclado=new Scanner(System.in);
