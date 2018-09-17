@@ -1,5 +1,5 @@
 
-import java.sql.Connectio;
+import java.sql.Connection;
 
 public class CONECTAR_BD {
 Connection con=null;
@@ -128,7 +128,39 @@ Connection con=null;
 	
 	public void Mostrar_Lista_Inventario() throws SQLException
 	{
+	
+	PreparedStatement stat= con.prepareStatement("SELECT * FROM INVENTARIO WHERE CODIGO_PIEZA=CODIGO_PIEZA");
+	
+	ResultSet result = stat.executeQuery();
+	while (result.next())
+	{
+	Sytem.out.println (result.getString(1) + " " + result.getString(2) + " " + result.getString(3) + " " + result.getString(4));
+	
+}
+}
 
+public void Mostrar_Lista_de_Maquinas () throws SQLException
+{
+
+PreparedStatement stat = con.prepareStatement("SELECT * FROM MAQUINARIA WHERE CODIGO_MAQUINARIA=CODIGO_MAQUINARIA");
+
+ResultSet result  = stat.executeQuery();
+while (result.next())
+{
+System.out.println(result.getString(1) + " " + result.getString(2) + " " + result.getString(3) + " " + result.getString(4));
+}
+}
+public void Calendario ()
+{
+}
+
+public void Registro_Residencia_Trabajadores(int cod, String ciudad, String departamento, String pais, int codEmpleado) throws SQLException {
+	
+	String insertar="insert into registros_residencia_trabajadores(codigo_ciudad,nombre_ciudad,departamento,pais,codigo_trabajador ) values(?,?,?,?,?)";
+	PreparedStatement inse = con.prepareStatement(insertar);
+	
+	inse.setInt(1, cod);
+	inse.setString(2, ciudad);
 		
 		
 	}
