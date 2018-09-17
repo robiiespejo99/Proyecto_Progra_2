@@ -33,5 +33,36 @@ public class MANTENIMIENTO_PREVENTIVO {
         op=leer.nextInt();
         switch(op)
         {
+          case 1:
+            System.out.println("Ingrese el codigo de 4 enteros");
+            int cod3=leer.nextInt();
+            System.out.println("Ingrese el plan preventivo");
+            String pedido=leer.next();
+            
+            try{
+              z1.Encargo_De_piezas(cod3, pedido);
+            } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+            }
+            
+            break;
+            
+          case 2:
+            
+            System.out.println("Ingrese el codigo de 4 enteros");
+            cod3=leer.nextInt();
+            System.out.println("Ingrese el plan preventivo");
+            pedido=leer.next();
+            
+            try{
+              z1.Encargo_De_Piezas(cod3, pedido);
+            } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+            }
+            break;
+            
+            case3:
 
 }
