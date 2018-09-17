@@ -1,5 +1,5 @@
 
-public class JEFE_MANTENIMIENTO {
+public class Jefe_Mantenimiento {
 
 }
 
