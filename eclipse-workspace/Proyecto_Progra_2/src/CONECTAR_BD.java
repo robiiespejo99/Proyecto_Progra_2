@@ -161,7 +161,12 @@ public void Registro_Residencia_Trabajadores(int cod, String ciudad, String depa
 	
 	inse.setInt(1, cod);
 	inse.setString(2, ciudad);
+	inse.setString(3, departamento);
+	inse.setString(4, pais);
+	inse.setInt(5, codEmpleado);
+	inse.executeUpdate();
 		
 		
 	}
 	
+}
