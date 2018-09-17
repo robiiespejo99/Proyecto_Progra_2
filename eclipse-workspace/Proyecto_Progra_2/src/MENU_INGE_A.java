@@ -1,3 +1,5 @@
+}
+}
 
 public class MENU_INGE_A {
   int op=0;
@@ -41,7 +43,55 @@ public class MENU_INGE_A {
                              Mantenimiento_Preventivo m3=new Mantenimiento_Preventivo();
                              m3.MenuPreventivo():
                              break;
+				   
                              case4:
+				   
+
+			        CONECTAR_BD o1=new CONECTAR_BD();
+			
+			        try {
+				o1.Mostrar_Lista_Inventario();
+		          	} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			     }
+			
+			
+			        break;
+			
+		             case 5:
+				   CONECTAR_BD s1=new CONECTAR_BD();
+			
+			try {
+				s1.Mostrar_Lista_de_Maquinas();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			break;
+		
+		default : System.out.println("Gracias por Usar el Sistema");
+		
+		}
+		}
+		
+		catch(InputMismatchException e) {
+			
+			System.out.println("Los datos Ingresados estan mal!!");
+			
+		}
+		
+	}while(op!=6);
+		
+		
+	
+	
+	}
+}
+
+			
+			
                              
 
 }
