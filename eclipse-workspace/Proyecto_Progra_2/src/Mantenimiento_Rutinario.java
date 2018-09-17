@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MANTENIMIENTO_RUTINARIO {
+public class Mantenimiento_Rutinario {
   
   int op1;
   ArrayList<Maquinas> maquinaria=new ArrayList<Maquinas>();
