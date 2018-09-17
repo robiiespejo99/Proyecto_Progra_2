@@ -1,5 +1,5 @@
 import javasql.SqlException;
-public class MANTENIMIENTO_NO_RUTINARIO {
+public class Mantenimiento_no_Rutinario {
 	
 int op=0;
 	
