@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class MANTENIMIENTO_PREVENTIVO {
+public class Mantenimiento_Preventivo {
   
   int op;
   
