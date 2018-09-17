@@ -1,4 +1,4 @@
-public class INVENTARIO {
+public class Inventario {
 
 
 
