@@ -77,7 +77,7 @@ public void Menu_No_Rutinario() throws InputMismatchException {
 			System.out.println("Ingrese El codigo de Registro");
 			cod2=leer.nextInt();
 			System.out.println("Ingrese El Programa");
-			
+			Programa=leer.next();
 			
 			try {
 				e1.Orden_Mantenimiento_No_Rutinario(cod2, Programa);
@@ -88,6 +88,34 @@ public void Menu_No_Rutinario() throws InputMismatchException {
 			
 			
 			break;
+		
+			case 4:
+				
+				System.out.println("Ingrese el programa Ideado para los Electricistas \n");
+			System.out.println("Ingrese El codigo de Registro");
+			cod2=leer.nextInt();
+			System.out.println("Ingrese El Programa");
+			Programa=leer.next();
+			
+			try {
+				e1.Orden_Mantenimiento_No_Rutinario(cod2, Programa);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			break;
+		}
+		}
+		catch(InputMismatchException e)
+		{
+		System.out.println("no existe ese tipo de datos");
+		}
+	}while(op !=5);
+	
+				
+				
 
 	
 	
