@@ -18,3 +18,21 @@ public class Trabajadores {
     Nombre = nombre;
 
 }
+public String getTrabajo() {
+	return Trabajo;
+}
+
+public void setTrabajo(String trabajo) {
+	Trabajo = trabajo;
+}
+
+public String getOrdenDiaria() {
+	return OrdenDiaria;
+}
+
+public void setOrdenDiaria(String ordenDiaria) {
+	OrdenDiaria = ordenDiaria;
+}
+
+public String getPlanApoyo() {
+	return PlanApoyo;
