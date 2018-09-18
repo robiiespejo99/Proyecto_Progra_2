@@ -62,6 +62,47 @@ public class Mantenimiento_Rutinario {
             break;
             
             case 3:
+			System.out.println("Ingrese el codigo de 4 enteros");
+			cod=leer.nextInt();
+			System.out.println("Ingrese La Orden Del Dia");
+			OrdenDia=leer.next();
+			
+			
+			try {
+				e1.Orden_del_dia(cod, OrdenDia);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			break;
+			
+		case 4: 
+			
+			System.out.println("Ingrese el codigo de 4 enteros");
+			cod=leer.nextInt();
+			System.out.println("Ingrese La Orden Del Dia");
+			OrdenDia=leer.next();
+			
+			
+			try {
+				e1.Orden_del_dia(cod, OrdenDia);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			break;
+		}
+}
+	catch(InputMismatchException e)
+	{
+	System.out.println("no existe ese tipo de datos");	
+	}
+    }while(op !=5);
+  }
               
 
 }
