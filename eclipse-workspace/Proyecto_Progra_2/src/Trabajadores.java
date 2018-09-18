@@ -36,3 +36,22 @@ public void setOrdenDiaria(String ordenDiaria) {
 
 public String getPlanApoyo() {
 	return PlanApoyo;
+}
+
+public void setPlanApoyo(String planApoyo) {
+	PlanApoyo = planApoyo;
+}
+
+public String getPlanCautelar() {
+	return PlanCautelar;
+}
+
+public void setPlanCautelar(String planCautelar) {
+	PlanCautelar = planCautelar;
+}
+
+public String Leer_Trabajadores()
+{
+	return(getNombre() + "\n" +getTrabajo() + "\n" + getOrdenDiaria() + "\n" +getPlanApoyo() + "\n" + getPlanCautelar());
+}
+}
