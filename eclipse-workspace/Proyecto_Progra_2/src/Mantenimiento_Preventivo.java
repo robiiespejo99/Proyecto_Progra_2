@@ -64,5 +64,45 @@ public class Mantenimiento_Preventivo {
             break;
             
             case3:
+            
+            System.out.println("Ingrese el codigo de 4 enteros");
+				 cod3=leer.nextInt();
+				System.out.println("Ingrese el Plan preventivo");
+				 pedido=leer.next();
+				
+				try {
+					z1.Encargo_De_piezas(cod3, pedido);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+				
+				break;
+            
+          case 4:
+            System.out.println("Ingrese el codigo de 4 enteros");
+            cod3=leer.nextInt();
+            System.out.println("Ingrese La Orden Del Dia");
+            pedido=leer.next();
+            
+            try {
+              z1.Encargo_De_Piezas(cod3, pedido);
+            } catch (SQLException e) {
+              // TODO Auto-generated catch block
+              e.printStackTrace();
+            }
+            
+            break;
+        }
+      }
+      catch(InputMismatchException e)
+      {
+        System.out.println("no existe ese tipo de datos");
+      }
+      
+    }while(op!=5);
+    
 
+}
 }
