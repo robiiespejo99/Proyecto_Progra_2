@@ -73,6 +73,21 @@ public void Menu_No_Rutinario() throws InputMismatchException {
 			
 		case 3:
 		
+				System.out.println("Ingrese el programa Ideado para los Soldadores \n");
+			System.out.println("Ingrese El codigo de Registro");
+			cod2=leer.nextInt();
+			System.out.println("Ingrese El Programa");
+			Programa=leer.next();
+			
+			try {
+				e1.Orden_Mantenimiento_No_Rutinario(cod2, Programa);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			break;
 
 	
 	
