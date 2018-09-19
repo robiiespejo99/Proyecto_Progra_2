@@ -1,0 +1,98 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 15-03-2018 a las 14:20:57
+-- Versión del servidor: 10.1.30-MariaDB
+-- Versión de PHP: 7.2.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `plan_mantenimiento`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `calendario`
+--
+
+CREATE TABLE `calendario` (
+  `CODIGO_CALENDARIO_MANTENIMIENTO` int(4) NOT NULL,
+  `AÑO` int(4) DEFAULT NULL,
+  `MES` int(2) DEFAULT NULL,
+  `DIA` int(2) DEFAULT NULL,
+  `CODIGO_MANTENIMIENTO` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `calendario`
+--
+
+INSERT INTO `calendario` (`CODIGO_CALENDARIO_MANTENIMIENTO`, `AÑO`, `MES`, `DIA`, `CODIGO_MANTENIMIENTO`) VALUES
+(20, 2017, NULL, NULL, NULL),
+(30, 2017, NULL, NULL, NULL),
+(40, 2017, NULL, NULL, NULL),
+(50, 2017, NULL, NULL, NULL),
+(60, 2017, NULL, NULL, NULL),
+(70, 2017, NULL, NULL, NULL),
+(80, 2017, NULL, NULL, NULL),
+(90, 2017, NULL, NULL, NULL),
+(100, 2017, NULL, NULL, NULL),
+(110, 2017, NULL, NULL, NULL),
+(120, 2017, NULL, NULL, NULL),
+(130, 2017, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `encargados`
+--
+
+CREATE TABLE `encargados` (
+  `CODIGO_ENCARGADOS` int(4) NOT NULL,
+  `NOMBRE` varchar(20) DEFAULT NULL,
+  `GRADO` varchar(20) DEFAULT NULL,
+  `SALARIO` decimal(5,0) DEFAULT NULL,
+  `CODIGO_MANTENIMIENTO` int(4) DEFAULT NULL,
+  `FUNTIONAL_PLACE` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `encargados`
+--
+
+INSERT INTO `encargados` (`CODIGO_ENCARGADOS`, `NOMBRE`, `GRADO`, `SALARIO`, `CODIGO_MANTENIMIENTO`, `FUNTIONAL_PLACE`) VALUES
+(123, 'roberto', 'JEFE DE MANTENIMIENT', '50000', 100, 209),
+(1234, 'A', 'INGENIERO ENCARGADO', '50000', 200, 210),
+(1235, 'B', 'INGENIERO ENCARGADO', '50000', 300, 211),
+(1236, 'C', 'INGENIERO ENCARGADO', '50000', 400, 212),
+(1237, 'D', 'INGENIERO ENCARGADO', '50000', 500, 213);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `inventario`
+--
+
+CREATE TABLE `inventario` (
+  `CODIGO_PIEZA` int(6) NOT NULL,
+  `DETALLES` varchar(50) DEFAULT NULL,
+  `SECCION` varchar(50) DEFAULT NULL,
+  `FUNTIONAL_PLACE` int(4) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `inventario`
+--
